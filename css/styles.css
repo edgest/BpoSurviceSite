@@ -9,19 +9,19 @@ body{
   margin: 0;
   padding: 0;
 }
-header,nav,.wrapper,#partner{
+header,nav,.wrapper,#partner,footer{
   background: #DBE000;
 }
 
-#feature,#survice,.box-f,.box-s,.box-p{
+#feature,#survice,.box-f,.box-s,.box-p,.box-r,.box-qq,.box10{
   background: #fff;
 }
 
-.box-gray,nav li a:hover{
+.box-gray,nav li a:hover, #survice, #price,#qa,#company{
   background: #F2F2F2;
 }
 
-.feature1{
+.feature1,.box-q{
   background: #F5F5B7;
 }
 
@@ -55,8 +55,6 @@ nav ul a, .tel{
 }
 
 .title_left{
-  /* flex-direction: column;
-  align-items: center; */
   height: auto;
 }
 
@@ -77,11 +75,11 @@ main{
   margin: 0 auto;
 }
 
-#feature,#survice,#partner{
+#feature,#survice,#partner,#casestudy,#price,#flow,#qa,#contact,#company,footer{
   text-align: center;
 }
 
-.box1,.box2,.box3,.box4{
+.box1,.box2,.box3,.box4,.box5,.box6,.box-o,.box10,.box-mm{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -92,16 +90,28 @@ main{
   padding: 0 auto;
 }
 
-.feature1{
+.feature1,.survice1{
   padding-top: 20px;
 }
 
-.box-f,.box-s,.box-p{
+.box-f,.box-s,.box-p,.box-c,.box-r,.box-l,{
   padding: 10px;
   padding: 0 auto;
   margin: 10px;
 }
+
+.box-p{
+  width: 50%;
 }
+
+.box-cc{
+  display: flex;
+}
+
+.box_r{
+  text-align: initial;
+}
+
 
 @media(min-width:560px){
 
@@ -151,16 +161,17 @@ main{
     width: 60%;
     padding: 0 50px 0 0;
   }
-  #feature{
-    margin: 80px 0;
   }
   .box-gray{
     width: 300px;
   }
-  .feature1{
+  .feature1,.survice1{
     margin: 40px 0 0 0;
   }
   .box-f{
     width: 300px;
+  }
+  #feature,#survice,#partner,#casestudy,#price,#flow,#qa,#contact,#comany,footer{
+    padding: 40px;
   }
 }
