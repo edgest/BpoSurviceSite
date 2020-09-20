@@ -17,7 +17,7 @@ header,nav,.wrapper,#partner,footer{
   background: #fff;
 }
 
-.box-gray,nav li a:hover, #survice, #price,#company{
+.box-gray,nav li a:hover, #survice,#company{
   background: #F2F2F2;
 }
 
@@ -130,6 +130,7 @@ main{
 
 #feature,#survice,#partner,#casestudy,#price,#flow,#qa,#contact,#company,footer{
   text-align: center;
+  
 }
 
 .box1,.box2,.box3,.box4,.box5,.box6,.box-o,.box10,.box-mm{
@@ -172,6 +173,385 @@ main{
   border-radius: 50%;
 }
 
+.Form {
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 720px;
+}
+@media screen and (max-width: 480px) {
+  .Form {
+    margin-top: 40px;
+  }
+}
+.Form-Item {
+  border-top: 1px solid #ddd;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item {
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    flex-wrap: wrap;
+  }
+}
+.Form-Item:nth-child(5) {
+  border-bottom: 1px solid #ddd;
+}
+.Form-Item-Label {
+  width: 100%;
+  max-width: 248px;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  font-size: 18px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Label {
+    max-width: inherit;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+  }
+}
+.Form-Item-Label.isMsg {
+  margin-top: 8px;
+  margin-bottom: auto;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Label.isMsg {
+    margin-top: 0;
+  }
+}
+.Form-Item-Label-Required {
+  border-radius: 6px;
+  margin-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 48px;
+  display: inline-block;
+  text-align: center;
+  background: #DBE000;
+  color: #fff;
+  font-size: 14px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Label-Required {
+    border-radius: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 32px;
+    font-size: 10px;
+  }
+}
+.Form-Item-Input {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 48px;
+  flex: 1;
+  width: 100%;
+  max-width: 410px;
+  background: #eaedf2;
+  font-size: 18px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Input {
+    margin-left: 0;
+    margin-top: 18px;
+    height: 40px;
+    flex: inherit;
+    font-size: 15px;
+  }
+}
+.Form-Item-Textarea {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 216px;
+  flex: 1;
+  width: 100%;
+  max-width: 410px;
+  background: #eaedf2;
+  font-size: 18px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Textarea {
+    margin-top: 18px;
+    margin-left: 0;
+    height: 200px;
+    flex: inherit;
+    font-size: 15px;
+  }
+}
+.Form-Btn {
+  border-radius: 6px;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 280px;
+  display: block;
+  letter-spacing: 0.05em;
+  background: #DBE000;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Btn {
+    margin-top: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 160px;
+    font-size: 16px;
+  }
+}
+
+.cp_pricetable1 {
+	text-align: center;
+	color: black;
+}
+.cp_pricetable1 .block {
+	position: relative;
+	float: left;
+	width: 33%;
+	height: 100%;
+	transition: all 0.2s ease-in-out;
+	-webkit-transform: translate(0px, 0px);
+	transform: translate(0px, 0px);
+}
+.cp_pricetable1 .block ul, li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+/**** blockのhover ****/
+.cp_pricetable1 .block:hover {
+	position: relative;
+	z-index: 100;
+	transition-delay: 0s;
+	-webkit-transform: translate(-2px,-2px);
+	transform: translate(-2px,-2px);
+	box-shadow: 0px 0 5px rgba(0,0,0,0.5);
+}
+.cp_pricetable1 .block:hover .header1,
+.cp_pricetable1 .block:hover .header2,
+.cp_pricetable1 .block:hover .style1,
+.cp_pricetable1 .block:hover .style2,
+.cp_pricetable1 .block:hover .footer1,
+.cp_pricetable1 .block:hover .footer2 {
+	padding: 0.5em;
+}
+/* --- メニュー名ブロック ---  */
+.cp_pricetable1 .block .header1 {
+	width: 100%;
+	padding: 0.5em;
+	color: #ffffff;
+	border-bottom: 1px solid #ffffff;
+	background: #DBE000;
+}
+/* --- 価格ブロック ---  */
+.cp_pricetable1 .block .header2 {
+	width: 100%;
+	padding: 0.5em;
+	border-top: 1px solid #DBE000;
+	background:  #F5F5B7;
+}
+/* --- 詳細 ---  */
+.cp_pricetable1 .block .style1,
+.cp_pricetable1 .block .style2,
+.cp_pricetable1 .block .footer1,
+.cp_pricetable1 .block .footer2 {
+	width: 100%;
+	padding: 0.5em;
+}
+.cp_pricetable1 .block .footer1,
+.cp_pricetable1 .block .footer2 {
+	padding: 0.5em;
+}
+.cp_pricetable1 .block .style1,
+.cp_pricetable1 .block .footer1 {
+	background-color: #e8effc;
+}
+.cp_pricetable1 .block .style2,
+.cp_pricetable1 .block .footer2 {
+	background-color: #d7e3fc;
+}
+.cp_pricetable1 .block .style1,
+.cp_pricetable1 .block .style2 {
+	border-bottom: 1px dotted #ffffff;
+}
+
+
+
+  .cp_qa *, .cp_qa *:after, .cp_qa *:before {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .cp_qa .cp_actab {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 0 1em 0;
+    color: #1b2538;
+  }
+  .cp_qa .cp_actab input {
+    position: absolute;
+    opacity: 0;
+  }
+  /* 質問 */
+  .cp_qa .cp_actab label {
+    font-weight: bold;
+    line-height: 1.6em;
+    position: relative;
+    display: block;
+    margin: 0 0 0 0;
+    padding: 1em 2em 1em 2.5em;
+    cursor: pointer;
+    text-indent: 1em;
+    border-radius: 0.5em;
+    background: rgba(27,37,56,0.1);
+  }
+  .cp_qa .cp_actab label::before {
+    font-family: serif;
+    font-size: 1.5em;
+    margin-left: -2em;
+    padding-right: 0.5em;
+    content: 'Q';
+  }
+  .cp_qa .cp_actab label:hover {
+    transition: all 0.3s;
+    color:  #DBE000 ;
+  }
+  /* --質問の＋アイコン */
+  .cp_qa .cp_actab label::after {
+    font-size: 1.7em;
+    font-weight: bold;
+    line-height: 2em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: 'b';
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    -webkit-transition: transform 0.4s;
+            transition: transform 0.4s;
+  }
+  /* 答え */
+  .cp_qa .cp_actab .cp_actab-content {
+    position: relative;
+    overflow: hidden;
+    max-height: 0;
+    padding: 0 0 0 2.5em;
+    -webkit-transition: max-height 0.2s;
+            transition: max-height 0.2s;
+    border-radius: 0 0 0.5em 0.5em;
+  }
+  .cp_qa .cp_actab .cp_actab-content::before {
+    font-family: serif;
+    font-size: 1.5em;
+    position: absolute;
+    margin: 0.4em 0 0 -1em;
+    padding: 0;
+    /* content: 'A'; */
+  }
+  .cp_qa .cp_actab .cp_actab-content p {
+    margin: 1em 1em 1em 0;
+  }
+  /* 質問を開いた時の仕様 */
+  /* --答えの高さ */
+  .cp_qa .cp_actab input:checked ~ .cp_actab-content {
+    max-height: 40em;
+    border: 10px solid rgba(27,37,56,0.1);
+  }
+  /* 質問をクリックした時のアイコンの動き */
+  .cp_qa .cp_actab input:checked ~ label {
+    color:  #DBE000 ;
+    border-radius: 0.5em 0.5em 0 0;
+  }
+  /* 質問をクリックした時の+の動き */
+  .cp_qa .cp_actab input[type=checkbox]:checked + label::after {
+    -webkit-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+
+  table.company {
+    width: 500px;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 0px 15px;
+    font-size: 12px;
+    }
+    
+    table.company th,
+    table.company td {
+    padding: 10px;
+    }
+    
+    table.company th {
+    background: #DBE000;
+    vertical-align: middle;
+    text-align: left;
+    width: 100px;
+    overflow: visible;
+    position: relative;
+    color: #fff;
+    font-weight: normal;
+    font-size: 15px;
+    }
+    
+    table.company th:after {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136, 183, 213, 0);
+    border-left-color: #DBE000;
+    border-width: 10px;
+    margin-top: -10px;
+    }
+    /* firefox */
+    @-moz-document url-prefix() {
+    table.company th::after {
+    float: right;
+    padding: 0;
+    left: 30px;
+    top: 10px;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: relative;
+    pointer-events: none;
+    border: 10px solid transparent;
+    border-left: #DBE000 10px solid;
+    margin-top: -10px;
+    }
+    }
+    
+    table.company td {
+    background: #f8f8f8;
+    width: 360px;
+    padding-left: 20px;
+    }
+  
 
 @media(min-width:560px){
 
