@@ -17,20 +17,21 @@
   <meta property="og:description"
     content="医療･介護･福祉経営者の時間を作るオンラインアシスタントを提供します｡オンラインアシスタントを使うことによって､事業や従業員､あなた自身の時間を増やし､本質的な業務に時間を費やせられる状態を作ります｡人事/秘書/Web管理等の事務作業をオンラインならではの優秀な人材に任せてみませんか?">
   <!-- <meta property="og:" content=""> -->
-
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="img/icon.png">
 </head>
 
 <body>
   <header>
-    <nav class="clone-nav, nav-sp">  
-      <h1 class="nav-logo">
+    <nav class="clone-nav, nav-sp">
+      <div class="nav-logo">
         <a href="/" class="logo">
-      <img src="img/log.png" width="60px" alt="Edgest">
-      </a>
-      </h1>
-      <ul class="nav_left">
+          <img src="img/log.png" width="60px" alt="Edgest">
+        </a>
+      </div>
+      <!-- <div class="nav-all"> -->
+      <ul class="nav-left">
         <li>
           <a href="#feature">特徴</a>
         </li>
@@ -47,16 +48,13 @@
           <a href="#price">料金</a>
         </li>
         <li>
-          <a href="#flow">運用流れ</a>
-        </li>
-        <li>
-          <a href="#QA">Q&A</a>
+          <a href="#qa">Q&A</a>
         </li>
         <li>
           <a href="#company">事業案内</a>
         </li>
       </ul>
-      <ul class="nav_right">
+      <ul class="nav-right">
         <li class="tel">
           tel.050-5375-8975
         </li>
@@ -64,16 +62,19 @@
           <a href="#contact">資料請求/お問い合わせ</a>
         </li>
       </ul>
+      <!-- </div> -->
     </nav>
     <div class="wrapper">
-      <div  class="title_left">
-        <h2 class="font-round">
+      <div class="title_left">
+        <h1 class="font-round">
           任せられない不安を
           <br class="off-sp">
           任せられる安心へ
-        </h2>
+        </h1>
         <p>
-          オンライン秘書サービスは必要な業務を必要な分だけその道の専門家に業務を依頼できるサービスです｡
+          オンライン秘書サービスは必要な業務を
+          <br>
+          必要な分だけ依頼できるサービスです｡
         </p>
         <div class="contact-btn">
           <a href="#contact" class="btn">今すぐ相談する</a>
@@ -88,66 +89,68 @@
   <main>
     <section id="feature">
       <h1>このようなお悩みは御座いませんか?</h1>
-      <h2>経営者･事業者さま</h2>
-      <img src="" alt="">
+      <p>経営者･事業者さま</p>
+      <img class="img-f" src="img/trouble.png" alt="お悩み,困りごと,トラブル">
       <div class="box1">
-        <div class="box-gray"> 
+        <div class="box-gray">
           <p>
             リソースが足りない･･･
           </p>
         </div>
-        <div class="box-gray"> 
+        <div class="box-gray">
           <p>
             専門家を雇うコストがない･･･
           </p>
         </div>
-        <div class="box-gray"> 
+        <div class="box-gray">
           <p>
             従業員に負担を掛けたくない･･･
           </p>
         </div>
       </div>
       <div class="feature1">
-        <h2>エジストなら...</h2>
-        <img src="" alt="">
+        <h2>エジストなら...!</h2>
         <div class="box2">
           <div class="box-f">
+            <img class="img-f" src="img/solution1.png" alt="問題解決">
             <h3>リソースをすぐに調整できる</h3>
             <p>必要な時に必要な分だけ依頼可能!</p>
           </div>
           <div class="box-f">
+            <img class="img-f" src="img/solution2.png" alt="問題解決">
             <h3>圧倒的なコストパフォーマンス</h3>
             <p>採用費､教育費､設備費等いらず!</p>
           </div>
           <div class="box-f">
+            <img class="img-f" src="img/solution3.png" alt="問題解決">
             <h3>幅広い業務を依頼できる</h3>
             <p>経理業務から記録業務まで依頼可能!</p>
           </div>
         </div>
       </div>
     </section>
-    
+
     <section id="survice">
       <h1>
-        サービス内容
+        SURVICE
       </h1>
-      <h2>
-        専門特化したアシスタントが
+      <p>
+        優秀なアシスタントが
         <br>
-        時間のないあなたをサポート致します｡
-      </h2>
+        時間のないあなたをサポートします｡
+      </p>
       <div class="box3">
         <div ckass="box-s">
-          <img src="" alt="">
+          <img class="img-s" src="img/Secretary.png" alt="秘書業務">
           <h3>秘書</h3>
           <p>
-            メール送受信対応やイベント調整等
+            メール対応やイベント調整等
             <br>
             細かいタスク処理業務
           </p>
         </div>
         <div ckass="box-s">
-          <img src="" alt="">
+          <img class="img-s" src="img/hr.png" alt="人事業務">
           <h3>人事</h3>
           <p>
             採用代行や面接代行など
@@ -156,7 +159,7 @@
           </p>
         </div>
         <div ckass="box-s">
-          <img src="" alt="">
+          <img class="img-s" src="img/accounting.png" alt="経理業務">
           <h3>経理</h3>
           <p>
             経理記帳や処遇改善計算等
@@ -165,7 +168,7 @@
           </p>
         </div>
         <div ckass="box-s">
-          <img src="" alt="">
+          <img class="img-s" src="img/web.png" alt="WEB業務">
           <h3>webサイト運用</h3>
           <p>
             サイト運用代行やチラシ作成等
@@ -174,83 +177,356 @@
           </p>
         </div>
       </div>
-        <div class="feature1">
-          <h2>エジストが選ばれる3つの理由</h2>
-          <div class="box2">
-            <div class="box-f">
-              <img src="" alt="">
-              <p>
-                医療･介護･福祉に実績のある
-                <br>
-                優秀な社員が対応
-              </p>
-            </div>
-            <div class="box-f">
-              <img src="" alt="">
-              <p>
-                チーム対応だからできる
-                <br>
-                専門分野を含む幅広い業務
-              </p>
-            </div>
-            <div class="box-f">
-              <img src="" alt="">
-              <p>
-                お客様に合わせた
-                <br>
-                連絡手段での徹底対応
-              </p>
-            </div>
-          </div>
-        </div>
+      <div class="contact-btn">
+        <a href="#contact" class="btn">詳しいサービス内容を相談する</a>
+      </div>
+      </div>
     </section>
     <section id="partner">
       <h1>
-        パートナー
+        PARTNER
       </h1>
       <div class="box4">
+        <img src="img/S__20742146.jpg" alt="パートナー,森永大樹">
         <div class="box-p">
-          <img src="" alt="プロフール画像">
-          <h3>
-            森永 大樹
+          <h2>
+            業界の状況に応じた最適解を最速で導き､
             <br>
-            (もりなが だいき)
-          </h3>
-          <p>ああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
-        </div>
-        <div class="box-p">
-          <img src="" alt="プロフィール画像">
-          <h3>
-            猪股 勇人
+            お客様に貢献する
+          </h2>
+          <p>
+            エジストでは、「業界と人材に適した最適なオペレーションサポート」を目指しています。
             <br>
-            (いのまた はやと)
+            <br>
+            医療･介護･福祉業界は､現場職の人材不足から現場にフォーカスが置かれがちですが､それらをまとめる経営･管理職の人材が他業界よりも少なく､適切な業務をこなすリソースとスキルが不足しているため､いかに経営､管理職の方々が現場により向き合える時間を作ってあげられるかが重要です｡
+            <br>
+            <br>
+            エジストでは医療･介護･福祉業界で実績のある人材を揃え､培った経験とノウハウによって、状況に応じた最適な解を最速で導き、お客様に貢献します。
+          </p>
+          <h3>
+            森永 大樹 (もりなが だいき)
           </h3>
-          <p>ああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+          <p>大学卒業後､ITベンチャーに就職し､介護業界特化の人材事業にてキャリアアドバイザーと法人担当の両方を担当する｡年間150事業所以上､300人以上の採用･転職実績を経て､2020年7月にエジストを創業｡</p>
         </div>
       </div>
     </section>
     <section id="casestudy">
-      
+      <h1>
+        CASE STUDY
+      </h1>
+      <h2>
+        バックオフィス業務を任して頂き､
+        <br>
+        コア業務をサポートしております｡
+      </h2>
+      <div class="box5">
+        <div class="box-c">
+          <img src="img/casestudy1.png" alt="円グラフ">
+          <div class="box-cc">
+            <p class="circle-r"></p>
+            <div class="box-ccc">
+              <h3>
+                WEB運用業務
+              </h3>
+              <p>
+                チラシ作成､SNS投稿､画像編集
+              </p>
+            </div>
+          </div>
+          <div class="box-cc">
+            <p class="circle-b"></p>
+            <div class="box-ccc">
+              <h3>
+                秘書業務
+              </h3>
+              <p>
+                書類のテンプレート作成､Excelデータ入力
+              </p>
+            </div>
+          </div>
+          <div class="box-cc">
+            <p class="circle-y"></p>
+            <div class="box-ccc">
+              <h3>
+                経理業務
+              </h3>
+              <p>
+                勘定仕分けの対応､請求書発行､在庫データ整理
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="box-c">
+          <img src="img/casestudy2.png" alt="円グラフ">
+          <div class="box-cc">
+            <p class="circle-r"></p>
+            <div class="box-ccc">
+              <h3>
+                WEB運用業務
+              </h3>
+              <p>
+                チラシ作成､SNS投稿､画像編集
+              </p>
+            </div>
+          </div>
+          <div class="box-cc">
+            <p class="circle-b"></p>
+            <div class="box-ccc">
+              <h3>
+                秘書業務
+              </h3>
+              <p>
+                書類のテンプレート作成､Excelデータ入力
+              </p>
+            </div>
+          </div>
+          <div class="box-cc">
+            <p class="circle-y"></p>
+            <div class="box-ccc">
+              <h3>
+                経理業務
+              </h3>
+              <p>
+                勘定仕分けの対応､請求書発行､在庫データ整理
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="box-c">
+          <img src="img/casestudy3.png" alt="円グラフ">
+          <div class="box-cc">
+            <p class="circle-r"></p>
+            <div class="box-ccc">
+              <h3>
+                WEB運用業務
+              </h3>
+              <p>
+                チラシ作成､SNS投稿､画像編集
+              </p>
+            </div>
+          </div>
+          <div class="box-cc">
+            <p class="circle-b"></p>
+            <div class="box-ccc">
+              <h3>
+                秘書業務
+              </h3>
+              <p>
+                書類のテンプレート作成､Excelデータ入力
+              </p>
+            </div>
+          </div>
+          <div class="box-cc">
+            <p class="circle-y"></p>
+            <div class="box-ccc">
+              <h3>
+                経理業務
+              </h3>
+              <p>
+                勘定仕分けの対応､請求書発行､在庫データ整理
+              </p>
+            </div>
+          </div>
+          <div class="box-cc">
+            <p class="circle-g"> </p>
+            <div class="box-ccc">
+              <h3>
+                経理業務
+              </h3>
+              <p>
+                勘定仕分けの対応､請求書発行､在庫データ整理
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="price">
-    
-    </section>
-    <section id="flow">
-    
-    </section>
-    <section id="QA">
-    
-    </section>
-    <section id="company">
-    
+      <h1>
+        PRECE
+      </h1>
+      <p>
+        料金プラン
+      </p>
+      <div class="cp_pricetable1">
+        <div class="block">
+          <ul>
+            <li class="header1">BASIC</li>
+            <li class="header2"><strong>¥100,000</strong>/月</li>
+            <li class="style1">6ヶ月契約</li>
+            <li class="style1">実働時間30時間/月</li>
+            <li class="style1">稼働時間:平日9:00~18:00</li>
+            <li class="style1">オフライン対応不可</li>
+          </ul>
+        </div>
+
+        <div class="block">
+          <ul>
+            <li class="header1">LONG</li>
+            <li class="header2"><strong>¥90,000</strong>/月</li>
+            <li class="style2">12ヶ月契約</li>
+            <li class="style2">実働時間30時間/月</li>
+            <li class="style2">稼働時間:平日9:00~18:00</li>
+            <li class="style2">オフライン対応要相談</li>
+          </ul>
+        </div>
+
+        <div class="block">
+          <ul>
+            <li class="header1">FULL CUSTOMIZE</li>
+            <li class="header2">要相談/月</li>
+            <li class="style1">6ヶ月契約~</li>
+            <li class="style1">実働時間:要相談</li>
+            <li class="style1">実働時間:平日､土日対応相談</li>
+            <li class="style1">オフライン対応可能</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <p>※13:00-14:00は、休憩時間となります。休憩時間は、メッセージへの返信は行わず、戻り次第、確認の上、ご返信させていただきます。</p>
+        <p>※上記金額は、税別になります。</p>
+      </div>
+      </section>
+
+    <section id="qa">
+      <h1>
+        Q&A
+      </h1>
+      <p>サービスに関するご質問をまとめました</p>
+      <div class="cp_qa">
+        <div class="cp_actab">
+          <input id="cp_tabfour031" type="checkbox" name="tabs">
+          <label for="cp_tabfour031">コミュニケーションはどのように取りますか?</label>
+          <div class="cp_actab-content">
+            <p>お電話､LINE､メール､その他ツールでお客様の使いやすいツールを選んでいただき､コミュニケーションを取ることができます｡</p>
+          </div>
+        </div>
+        <div class="cp_actab">
+          <input id="cp_tabfour032" type="checkbox" name="tabs">
+          <label for="cp_tabfour032">情報の管理は大丈夫ですか?</label>
+          <div class="cp_actab-content">
+            <p>アシスタントとは全て弊社と秘密情報保持契約(NDA)を結んでおります｡また､エジストと企業間にて秘密保持も締結を行っておりますのでご安心してご依頼いただけます｡</p>
+          </div>
+        </div>
+        <div class="cp_actab">
+          <input id="cp_tabfour033" type="checkbox" name="tabs">
+          <label for="cp_tabfour033">デザイナーやエンジニアといった専門的な業務も依頼することはできますか?</label>
+          <div class="cp_actab-content">
+            <p>できます｡ただアシスタント業務ではなく､別サービスとして対応になる場合も御座いますので､詳細はお問い合わせ下さい｡</p>
+          </div>
+        </div>
+        <div class="cp_actab">
+          <input id="cp_tabfour034" type="checkbox" name="tabs">
+          <label for="cp_tabfour034">担当チームはどのように決まるのですか?</label>
+          <div class="cp_actab-content">
+            <p>依頼いただく内容をお聞きした上で､一番適切と思われるチームを弊社で選定し､決定させていただきます｡</p>
+          </div>
+        </div>
+        <div class="cp_actab">
+          <input id="cp_tabfour035" type="checkbox" name="tabs">
+          <label for="cp_tabfour035">使い切れなかった時間はどうなりますか?</label>
+          <div class="cp_actab-content">
+            <p>次月のみ繰り越しが可能なのでご安心下さい｡</p>
+          </div>
+        </div>
+        <div class="cp_actab">
+          <input id="cp_tabfour036" type="checkbox" name="tabs">
+          <label for="cp_tabfour036">アシスタントはどのような方がいますか?</label>
+          <div class="cp_actab-content">
+            <p>医療･介護･福祉業界に実績､経験のあるコンサルタントから事務員まで幅広く在籍しております｡</p>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="contact">
-    
+      <h1>お問い合わせ</h1>
+      <p>
+        お気軽にお問い合わせ下さい!
+      </p>
+      <div class="Form">
+        <div class="Form-Item">
+          <p class="Form-Item-Label">
+            <span class="Form-Item-Label-Required">必須</span>会社/事業所名
+          </p>
+          <input type="text" class="Form-Item-Input" placeholder="例）エジスト事業所">
+        </div>
+        <div class="Form-Item">
+          <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
+          <input type="text" class="Form-Item-Input" placeholder="例）山田太郎">
+        </div>
+        <div class="Form-Item">
+          <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>電話番号</p>
+          <input type="text" class="Form-Item-Input" placeholder="例）000-0000-0000">
+        </div>
+        <div class="Form-Item">
+          <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
+          <input type="email" class="Form-Item-Input" placeholder="例）example@gmail.com">
+        </div>
+        <div class="Form-Item">
+          <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
+          <textarea class="Form-Item-Textarea"></textarea>
+        </div>
+        <input type="submit" class="Form-Btn" value="送信する">
+      </div>
+    </section>
+    <section id="company">
+      <h1>COMPANY</h1>
+      <p>事業所概要</p>
+      <table class="company">
+        <tbody>
+          <tr>
+            <th class="arrow_box">事業所名</div>
+            </th>
+            <td>エジスト事業所</td>
+          </tr>
+          <tr>
+            <th class="arrow_box">創業者名</div>
+            </th>
+            <td>森永 大樹</td>
+          </tr>
+          <tr>
+            <th class="arrow_box">創業年月</div>
+            </th>
+            <td>2020年7月</td>
+          </tr>
+          <tr>
+            <th class="arrow_box">TEL</div>
+            </th>
+            <td>050-5375-8975</td>
+          </tr>
+          <tr>
+            <th class="arrow_box">FAX</div>
+            </th>
+            <td>06-7632-4555</td>
+          </tr>
+          <tr>
+            <th class="arrow_box">eMail</div>
+            </th>
+            <td>info@edgest.jp</td>
+          </tr>
+          <tr>
+            <th class="arrow_box">所在地</th>
+            <td>
+              〒530-0026<br>
+              大阪府大阪市北区神山町7-9-502
+            </td>
+          </tr>
+          <tr>
+            <th>事業内容</th>
+            <td>
+              ウェブサイト制作事業<br>
+              （企画、マーケティング、デザイン制作、システム開発）<br>
+              医療介護コンサルティング事業<br>
+              オンラインアシスタント事業
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </section>
   </main>
-  
+
   <footer>
-    
+    ©2020,Edgest All Rights Reserved
   </footer>
 </body>
 
