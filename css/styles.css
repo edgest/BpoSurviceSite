@@ -9,7 +9,7 @@ body{
   margin: 0;
   padding: 0;
 }
-header,nav,.wrapper,#partner,footer{
+header,.wrapper,#partner,footer{
   background: #DBE000;
 }
 
@@ -17,7 +17,7 @@ header,nav,.wrapper,#partner,footer{
   background: #fff;
 }
 
-.box-gray,nav li a:hover, #survice,#company{
+.box-gray,header li a:hover, #survice,#company{
   background: #F2F2F2;
 }
 
@@ -49,66 +49,100 @@ header,nav,.wrapper,#partner,footer{
   height: 150px;
 }
 
-.img-s{
-  width: 200px;
-  height: 200px;
+.nav-pc{
+  display: none;
 }
 
-nav{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 70px;
-}
-nav ul{
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
+/* common nav 用 */
+
+
+/* nav-sp用 */
+
+.title_left{
+  display: none;
 }
 
-.nav-left{
-  width: 700px;
-}
-
-.nav-right{
-width: 400px;
-}
-
-.nav-left li,.nav-right li{
+.title_right{
   width: 100%;
 }
-.nav-left a,.nav-right a{
+
+.nav{
+  display: flex;
+}
+
+.nav-sp{
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  line-height: 64px;
+  align-items: center;
+}
+
+.logo img{
+  padding: 20px 10px 10px 10px;
+  height: 32px;
+}
+
+.nav-sp #open{
+ line-height: 64px;
+ font-size: 32px;
+ cursor: pointer;
+}
+
+.nav-sp #open.hide{
+  display: none;
+}
+
+.overlay{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.95);
+  padding-top: 64px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .6s;
+}
+
+.overlay.show{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.overlay #close{
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+
+.overray ul{
+  list-style-type: none;
+}
+
+.overlay li a{
+  text-decoration: none;
+  color: black;
   display: block;
 }
 
-nav a, .tel{
-  padding: 0 10px;
-  line-height:70px;
-  text-decoration: none;
-  color: black;
-  text-align: center;
-}
-
-.nav-logo{
-  width: 80px;
-}
+/* sp用 */
 
 .wrapper {
   width:100%;
   max-width:100%;
   margin: 0 auto;
-
-}
-
-.title_left{
-  width: 300px;
 }
 
 .btn{
   color: #fff;
   display: block;
-  width: 300px;
+  width: 250px;
   line-height: 80px;
   text-align: center;
   text-decoration: none;
@@ -133,10 +167,11 @@ main{
   
 }
 
-.box1,.box2,.box3,.box4,.box5,.box6,.box-o,.box10,.box-mm{
+.box1,.box2,.box3,.box5,.box6,.box-o,.box10,.box-mm{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
 }
 
 .box-gray{
@@ -144,12 +179,26 @@ main{
   padding: 0 auto;
   border-radius: 10px;
 }
+.box3{
+  padding: 0 20px 0;
+  width: auto;
+}
+
+.img-s{
+  width: 100px;
+  height: 100px;
+}
+
+/* .box4 img{
+  width: 70%;
+  height: auto;
+} */
 
 .feature1,.survice1{
   padding-top: 20px;
 }
 
-.box-s,.box-p,.box-c,.box-r,.box-l,{
+.box-s,.box-p,.box-r,.box-l,{
   /* padding: 10px;
   padding: 0 auto; */
   margin: 10px;
@@ -159,19 +208,11 @@ main{
   width: 50%;
 }
 
-.box-cc{
-  display: flex;
-}
 
 .box_r{
   text-align: initial;
 }
 
-.circle-r,.circle-b,.circle-y,.circle-g{
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-}
 
 .Form {
   margin-top: 80px;
@@ -553,24 +594,32 @@ main{
     }
   
 
-@media(min-width:560px){
+@media(min-width:320px){
+  #feature,#survice,#partner,#casestudy,#price,#flow,#qa,#contact,#company,footer{
+    padding: 20px 0 20px 0;
+  }
 
-}
+  .wrapper{
+   height: 500px;
+  }
 
 
 /* medium screen  */
 @media(min-width:768px){
+
+  #feature,#survice,#partner,#casestudy,#price,#flow,#qa,#contact,#company,footer{
+    padding: 20px 0 20px 0;
+  }
+
   .wrapper{
     margin: 0 auto;
     width: 700px;
-
     height: 550px;
     justify-content: center;
     align-items: center;
   }
   .title_left{
     width: 50%;
-    margin: 0 0 0 40px;
     justify-content: center;
     align-items: center;
   }
@@ -578,13 +627,139 @@ main{
     width: 50%;
   }
 
+  .box-gray{
+    width: 250px;
+  }
+
+  .box-f{
+    width: 250px;
+    margin: 0 20px 20px 20px;
+    width: 100%;
+  }
+
+  .img-s{
+    width: 150px;
+    height: 150px;
+  }
+
+  .box4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    margin: 0 150px;
+  }
+
+  .box4 img {
+    width: 90%;
+    height: auto;
+  }
+
+  .box-p{
+    width: 450px;
+    margin: 10px;
+  }
+
+  .box-p h2{
+    padding: 1rem 2rem;
+    border: 3px solid #000;
+  }
+
+  .box-p h3{
+    border-bottom: 6px double #000;
+  }
+
+
 }
 
 /* large screen  */
 @media(min-width:1080px){
+
+  #feature,#survice,#partner,#casestudy,#price,#flow,#qa,#contact,#company,footer{
+    padding: 40px 0 40px 0;
+  }
+
   .wrapper{
     display: flex;
+    justify-content: center;
     width: 900px;
+  }
+
+  main{
+    width: 1080px;
+  }
+
+  .nav-sp{
+    display: none;
+  }
+
+  .nav-pc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70px;
+    margin-left: auto;
+  }
+
+  .nav-menu {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-right: 20px;
+  }
+
+  .nav-menu ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding-inline-start: 40px;
+  }
+
+  .nav-pc li{
+    display: inline-block;
+    list-style: none;
+
+  }
+
+  .nav-pc a {
+    padding: 0 10px;
+    line-height:70px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    display: block;
+  }
+
+  .title_left{
+    display: block;
+    width: 300px;
+  }
+
+  .box-f{
+    width: 300px;
+    margin: 0 20px 20px 20px;
+  }
+
+  .img-s{
+    width: 200px;
+    height: 200px;
+  }
+
+  .box4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box4 img{
+    height: 600px;
+    width: auto;
+  }
+
+  .box-p{
+    width: 50%;
   }
 
 }
@@ -594,23 +769,35 @@ main{
     width: 1080px;
   }
 
+  .nav-logo{
+    width: 120px;
+  }
+
+  header ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+header a .tel{
+    padding: 0 10px;
+    line-height:70px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+  }
+
   .title_right{
     width: 60%;
     padding: 0 50px 0 0;
   }
-  }
+
   .box-gray{
     width: 300px;
   }
   .feature1,.survice1{
     margin: 40px 0 0 0;
-  }
-  .box-f{
-    width: 300px;
-    margin: 0 20px 20px 20px;
-  }
-  #feature,#survice,#partner,#casestudy,#price,#flow,#qa,#contact,#comany,footer{
-    padding: 40px 0 40px 0;
   }
 
 }
